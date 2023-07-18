@@ -1,10 +1,12 @@
 import subprocess
 
 # Specify the application you want to open
-applications = 'C:/Users/ТАЛГАТ/AppData/Local/Yandex/YandexBrowser/Application/browser.exe'
+application = 'C:/Users/ТАЛГАТ/AppData/Local/Yandex/YandexBrowser/Application/browser.exe'
+application2 = r"C:\Users\ТАЛГАТ\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 
 try:
     # Open the application using the default system behavior
-    subprocess.Popen(applications)
+    subprocess.Popen(application)
+    subprocess.Popen(application2)
 except FileNotFoundError:
-    print(f"Could not find the '{applications}' application.")
+    print(f"Could not find the '{application}' application.")
